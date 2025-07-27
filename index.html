@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espoir Médical International - Soins de qualité en Tunisie</title>
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "emi-blue": "#1E40AF",
+              "emi-cyan": "#0891B2",
+              "emi-light-blue": "#60A5FA",
+            },
+          },
+        },
+      };
+    </script> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #1e40af 0%, #0891b2 100%);
+      }
+      .hero-pattern {
+        background-image: radial-gradient(
+            circle at 20% 50%,
+            rgba(120, 119, 198, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 119, 198, 0.1) 0%,
+            transparent 50%
+          );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      .pulse-animation {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+
+      .floating-delayed {
+        animation: floating 4s ease-in-out infinite 1s;
+      }
+
+      .floating-slow {
+        animation: floating 5s ease-in-out infinite 2s;
+      }
+
+      @keyframes floating {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      /* Hero loading animations */
+      .hero-fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .hero-fade-in.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .hero-slide-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .hero-slide-left.animate {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .hero-slide-right {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .hero-slide-right.animate {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .hero-scale-in {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .hero-scale-in.animate {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* Stats cards animation */
+      .stats-card {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .stats-card.animate {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      /* Problem/Solution section animations */
+      .section-fade-in {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .section-fade-in.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .feature-slide-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .feature-slide-up.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* New animations for scroll */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease;
+      }
+
+      .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style> -->
+  </head>
+  <body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-emi-blue to-emi-cyan rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-stethoscope text-white text-xl"></i>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-emi-blue">E.M.I</h1>
+              <p class="text-xs text-gray-600">Espoir Médical International</p>
+            </div>
+          </div>
+
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-emi-blue transition-colors"
+              >Services</a
+            >
+            <a
+              href="#processus"
+              class="text-gray-700 hover:text-emi-blue transition-colors"
+              >Processus</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-emi-blue transition-colors"
+              >Contact</a
+            >
+            <button
+              class="whatsapp-button bg-gradient-to-r from-emi-blue to-emi-cyan text-white px-6 py-2 rounded-full hover:shadow-lg transition-all"
+            >
+              <i class="fab fa-whatsapp mr-2"></i>
+              Whatsapp
+            </button>
+          </nav>
+
+          <button class="md:hidden text-gray-700" id="mobile-menu-button">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-emi-blue transition-colors py-2"
+              >Services</a
+            >
+            <a
+              href="#processus"
+              class="text-gray-700 hover:text-emi-blue transition-colors py-2"
+              >Processus</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-emi-blue transition-colors py-2"
+              >Contact</a
+            >
+            <button
+              class="whatsapp-button bg-gradient-to-r from-emi-blue to-emi-cyan text-white px-6 py-2 rounded-full hover:shadow-lg transition-all text-center"
+            >
+              <i class="fab fa-whatsapp mr-2"></i>
+              Whatsapp
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="gradient-bg hero-pattern pt-40 pb-16 text-white relative overflow-hidden"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <h2
+                class="text-5xl lg:text-6xl font-bold leading-tight hero-fade-in"
+              >
+                <span class="text-emi-blue"> Soins médicaux de </span>
+                <span class="text-emi-light-blue">qualité </span>
+                <span class="text-emi-blue">en Tunisie</span>
+              </h2>
+              <p class="text-xl text-emi-cyan leading-relaxed hero-fade-in">
+                Vous êtes en RDC et souhaitez bénéficier de soins médicaux de
+                qualité en Tunisie ? EMI vous accompagne de A à Z avec une prise
+                en charge humaine, sécurisée et professionnelle.
+              </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 hero-slide-left">
+              <a
+                href="#contact"
+                class="bg-white text-emi-blue px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105"
+              >
+                <i class="fas fa-file-medical mr-2"></i>
+                Obtenir mon devis gratuit
+              </a>
+              <button
+                class="whatsapp-button bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all"
+              >
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp
+              </button>
+            </div>
+
+            <div class="flex items-center space-x-6 text-blue-100 hero-fade-in">
+              <div class="flex items-center space-x-2">
+                <i class="fas fa-shield-alt text-emi-cyan"></i>
+                <span class="text-emi-cyan">Accompagnement sécurisé</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i class="fas fa-heart text-emi-cyan"></i>
+                <span class="text-emi-cyan">Prise en charge humaine</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative hero-slide-right">
+            <div class="relative z-10 floating hero-scale-in">
+              <img
+                class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+                src="./assets/images/hero.png"
+                alt="Medical care illustration"
+              />
+            </div>
+
+            <!-- Stats overlay cards -->
+            <div
+              class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/20 z-20 floating-delayed stats-card"
+            >
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-heart text-white text-xl"></i>
+                </div>
+                <div>
+                  <div class="text-lg font-bold text-gray-800">500+</div>
+                  <div class="text-sm text-gray-600">Patients accompagnés</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute -top-6 -right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/20 z-20 floating-slow stats-card"
+            >
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-award text-white text-xl"></i>
+                </div>
+                <div>
+                  <div class="text-lg font-bold text-gray-800">98%</div>
+                  <div class="text-sm text-gray-600">Satisfaction</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative elements -->
+      <div
+        class="absolute top-20 right-10 w-20 h-20 bg-cyan-400/20 rounded-full blur-xl"
+      ></div>
+      <div
+        class="absolute bottom-20 left-10 w-32 h-32 bg-blue-400/20 rounded-full blur-xl"
+      ></div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12 section-fade-in">
+          <h3 class="text-4xl font-bold text-gray-800 mb-4">
+            Vous cherchez des soins médicaux de qualité ?
+          </h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Notre mission : faciliter votre parcours de soins en Tunisie, du
+            diagnostic à votre retour au pays
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center feature-slide-up">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-emi-blue to-emi-cyan rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-award text-white text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-semibold mb-2">Qualité des soins</h4>
+            <p class="text-gray-600">
+              Cliniques accreditées avec équipements de dernière génération
+            </p>
+          </div>
+
+          <div class="text-center feature-slide-up">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-emi-blue to-emi-cyan rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-euro-sign text-white text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-semibold mb-2">Coûts abordables</h4>
+            <p class="text-gray-600">
+              Tarifs compétitifs sans compromis sur la qualité
+            </p>
+          </div>
+
+          <div class="text-center feature-slide-up">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-emi-blue to-emi-cyan rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-hands-helping text-white text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-semibold mb-2">
+              Accompagnement personnalisé
+            </h4>
+            <p class="text-gray-600">
+              Support 24/7 et assistance complète durant votre séjour
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h3 class="text-4xl font-bold text-gray-800 mb-4">Nos Services</h3>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Un accompagnement complet pour votre voyage médical
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-file-medical-alt text-white text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-4 text-emi-blue">
+              Analyse de votre dossier médical
+            </h4>
+            <p class="text-gray-600 mb-4">
+              Nos médecins partenaires étudient votre dossier pour vous fournir
+              un premier avis rapide et fiable.
+            </p>
+            <div class="text-emi-cyan font-semibold">
+              <i class="fas fa-star mr-1"></i>
+              Analyse confidentielle et rapide
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-hospital text-white text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-4 text-emi-blue">
+              Sélection de la clinique adaptée
+            </h4>
+            <p class="text-gray-600 mb-4">
+              Nous vous proposons les meilleures cliniques selon votre besoin :
+              chirurgie, soins dentaires, examens, etc.
+            </p>
+            <div class="text-emi-cyan font-semibold">
+              <i class="fas fa-star mr-1"></i>
+              Sélection fiable, santé assurée
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-plane text-white text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-4 text-emi-blue">
+              Organisation du séjour
+            </h4>
+            <p class="text-gray-600 mb-4">
+              Nous vous assistons dans les démarches administratives (visa,
+              billet d'avion, etc.) et l'organisation de votre hébergement.
+            </p>
+            <div class="text-emi-cyan font-semibold">
+              <i class="fas fa-star mr-1"></i>
+              Vous voyagez serein(e)
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-heartbeat text-white text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-4 text-emi-blue">
+              Soins médicaux & suivi
+            </h4>
+            <p class="text-gray-600 mb-4">
+              Vous bénéficiez de vos soins dans les meilleures conditions, avec
+              un accompagnement personnalisé tout au long de votre traitement.
+            </p>
+            <div class="text-emi-cyan font-semibold">
+              <i class="fas fa-star mr-1"></i>
+              Un suivi de qualité, même après votre retour
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section
+      id="processus"
+      class="py-20 bg-gradient-to-br from-gray-50 to-blue-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 animate-on-scroll">
+          <h3 class="text-4xl font-bold text-gray-800 mb-4">Notre Processus</h3>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Un accompagnement étape par étape pour votre tranquillité d'esprit
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- Avant -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl card-hover animate-on-scroll"
+          >
+            <div class="text-center mb-6">
+              <div
+                class="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-clipboard-list text-white text-2xl"></i>
+              </div>
+              <h4 class="text-2xl font-bold text-emi-blue">Avant le voyage</h4>
+            </div>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Orientation et conseil
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Diagnostic à distance
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Assistance visa
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Réservation billet d'avion
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pendant -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl card-hover animate-on-scroll"
+          >
+            <div class="text-center mb-6">
+              <div
+                class="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-user-md text-white text-2xl"></i>
+              </div>
+              <h4 class="text-2xl font-bold text-emi-blue">
+                Pendant le séjour
+              </h4>
+            </div>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Accueil à l'aéroport
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Hébergement organisé
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Suivi médical personnalisé
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Transport et accompagnement
+              </li>
+            </ul>
+          </div>
+
+          <!-- Après -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl card-hover animate-on-scroll"
+          >
+            <div class="text-center mb-6">
+              <div
+                class="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-home text-white text-2xl"></i>
+              </div>
+              <h4 class="text-2xl font-bold text-emi-blue">Après les soins</h4>
+            </div>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Suivi post-opératoire
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Rapport médical complet
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Retour accompagné
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Support continu
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="animate-on-scroll">
+            <h3 class="text-4xl font-bold text-emi-blue mb-6">
+              Premier contact & orientation
+            </h3>
+            <p class="text-xl text-gray-600 mb-8">
+              Contactez-nous et posez toutes vos questions. Nous vous guidons
+              pas à pas dans l'organisation de votre voyage médical.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center"
+                >
+                  <i class="fab fa-whatsapp text-white text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">WhatsApp</h4>
+                  <p class="text-gray-600">Réponse rapide et directe</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-phone text-white text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">+216 58 016 595</h4>
+                  <p class="text-gray-600">Disponible 7j/7</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope text-white text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">
+                    espoirmedicalinternational@gmail.com
+                  </h4>
+                  <p class="text-gray-600">Email professionnel</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <button
+                class="whatsapp-button bg-gradient-to-r from-emi-blue to-emi-cyan text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105"
+              >
+                <i class="fab fa-whatsapp mr-2"></i>
+                Contactez-nous pour commencer !
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-8 animate-on-scroll">
+            <h4 class="text-2xl font-bold text-gray-800 mb-6">
+              Demande de devis gratuit
+            </h4>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Prénom"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Nom"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
+                />
+              </div>
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
+              />
+              <input
+                type="tel"
+                placeholder="Téléphone"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
+              />
+              <select
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
+              >
+                <option>Type de soins recherchés</option>
+                <option>Chirurgie générale</option>
+                <option>Soins dentaires</option>
+                <option>Examens médicaux</option>
+                <option>Chirurgie esthétique</option>
+                <option>Autre</option>
+              </select>
+              <textarea
+                placeholder="Décrivez votre situation..."
+                rows="4"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-emi-blue to-emi-cyan text-white py-4 rounded-lg font-semibold hover:shadow-lg transition-all"
+              >
+                Envoyer ma demande
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="gradient-bg py-16 text-white text-center">
+      <div class="container mx-auto px-4">
+        <h3 class="text-4xl font-bold mb-4 animate-on-scroll">
+          Votre devis personnalisé vous attend
+        </h3>
+        <p
+          class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto animate-on-scroll"
+        >
+          EMI, espoir qui vous accompagne... Demandez votre devis dès maintenant
+          et commencez votre parcours de soins en toute sérénité.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll"
+        >
+          <a
+            href="#contact"
+            class="bg-white text-emi-blue px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105"
+          >
+            <i class="fas fa-calculator mr-2"></i>
+            Demander mon devis gratuit
+          </a>
+          <a
+            href="tel:+21658016595"
+            class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-emi-blue transition-all"
+          >
+            <i class="fas fa-phone mr-2"></i>
+            Appeler maintenant
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="animate-on-scroll">
+            <div class="flex items-center space-x-3 mb-4">
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-emi-blue to-emi-cyan rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-stethoscope text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">E.M.I</h3>
+                <p class="text-sm text-gray-400">
+                  Espoir Médical International
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-400">
+              Votre partenaire de confiance pour vos soins médicaux en Tunisie.
+            </p>
+          </div>
+
+          <div class="animate-on-scroll">
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>Analyse médicale</li>
+              <li>Sélection clinique</li>
+              <li>Organisation voyage</li>
+              <li>Suivi médical</li>
+            </ul>
+          </div>
+
+          <div class="animate-on-scroll">
+            <h4 class="text-lg font-semibold mb-4">Contact</h4>
+            <div class="space-y-2 text-gray-400">
+              <p><i class="fas fa-phone mr-2"></i> +216 58 016 595</p>
+              <p>
+                <i class="fas fa-envelope mr-2"></i>
+                espoirmedicalinternational@gmail.com
+              </p>
+              <p><i class="fas fa-map-marker-alt mr-2"></i> Tunisie</p>
+            </div>
+          </div>
+
+          <div class="animate-on-scroll">
+            <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 animate-on-scroll"
+        >
+          <p>&copy; 2024 Espoir Médical International. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Hero section loading animation
+      function initPageAnimations() {
+        // Hero elements
+        const heroElements = document.querySelectorAll(
+          ".hero-fade-in, .hero-slide-left, .hero-slide-right, .hero-scale-in, .stats-card"
+        );
+
+        // Problem/Solution section elements
+        const sectionElements = document.querySelectorAll(
+          ".section-fade-in, .feature-slide-up"
+        );
+
+        // Combined animation sequence
+        const allElements = [...heroElements, ...sectionElements];
+
+        // Staggered animation delays - hero first, then section
+        const delays = [
+          0, // Hero title
+          200, // Hero description
+          400, // Hero buttons
+          600, // Hero features
+          800, // Hero image
+          1000, // Stats card 1
+          1200, // Stats card 2
+          1400, // Section title
+          1600, // Feature 1
+          1750, // Feature 2
+          1900, // Feature 3
+        ];
+
+        allElements.forEach((element, index) => {
+          setTimeout(() => {
+            element.classList.add("animate");
+          }, delays[index] || 0);
+        });
+      }
+
+      // Initialize animations on page load
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          initPageAnimations();
+        }, 300); // Small delay to ensure page is fully loaded
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.classList.add("bg-white/95", "backdrop-blur-sm");
+        } else {
+          header.classList.remove("bg-white/95", "backdrop-blur-sm");
+        }
+      });
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+
+          // Toggle hamburger icon
+          const icon = mobileMenuButton.querySelector("i");
+          if (mobileMenu.classList.contains("hidden")) {
+            icon.className = "fas fa-bars text-xl";
+          } else {
+            icon.className = "fas fa-times text-xl";
+          }
+        });
+
+        // Close mobile menu when clicking on links
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            const icon = mobileMenuButton.querySelector("i");
+            icon.className = "fas fa-bars text-xl";
+          });
+        });
+      }
+
+      // Form submission
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Merci pour votre demande ! Nous vous contacterons bientôt.");
+      });
+
+      // WhatsApp button functionality
+      document.querySelectorAll("button").forEach((button) => {
+        if (button.classList.contains("whatsapp-button")) {
+          button.addEventListener("click", function () {
+            window.open(
+              "https://wa.me/21658016595?text=Bonjour, je souhaite obtenir des informations sur vos services médicaux en Tunisie.",
+              "_blank"
+            );
+          });
+        }
+      });
+
+      // Scroll animations
+      function animateOnScroll() {
+        const elements = document.querySelectorAll(
+          ".card-hover, .animate-on-scroll"
+        );
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      }
+
+      // Initialize scroll animations
+      document
+        .querySelectorAll(".card-hover, .animate-on-scroll")
+        .forEach((element) => {
+          element.style.opacity = "0";
+          element.style.transform = "translateY(20px)";
+          element.style.transition = "all 0.6s ease";
+        });
+
+      window.addEventListener("scroll", animateOnScroll);
+      animateOnScroll(); // Run once on load
+    </script>
+  </body>
+</html>
