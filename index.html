@@ -4,174 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Espoir Médical International - Soins de qualité en Tunisie</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="EMI vous accompagne pour vos soins médicaux en Tunisie depuis la RDC. Devis gratuit, accompagnement sécurisé, cliniques de qualité. Service RDC-Tunisie +216 58 016 595."
+    />
+    <meta
+      name="keywords"
+      content="soins médicaux Tunisie, tourisme médical, cliniques Tunisie, chirurgie Tunisie, soins dentaires Tunisie, EMI, Espoir Médical International, voyage médical RDC Tunisie, soins RDC, médical Congo Kinshasa"
+    />
+    <meta name="author" content="Espoir Médical International" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French" />
+    <meta name="geo.region" content="TN;CD" />
+    <meta
+      name="geo.country"
+      content="Tunisia;Democratic Republic of the Congo"
+    />
+    <meta
+      name="geo.placename"
+      content="Tunisie;République Démocratique du Congo"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://espoirmedicalinternational.com/" />
+    <meta
+      property="og:title"
+      content="Espoir Médical International - Soins de qualité en Tunisie"
+    />
+    <meta
+      property="og:description"
+      content="EMI vous accompagne pour vos soins médicaux en Tunisie depuis la RDC. Devis gratuit, accompagnement sécurisé, cliniques de qualité."
+    />
+    <meta
+      property="og:image"
+      content="https://espoirmedicalinternational.com/assets/images/hero.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Espoir Médical International" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://espoirmedicalinternational.com/"
+    />
+    <meta
+      property="twitter:title"
+      content="Espoir Médical International - Soins de qualité en Tunisie"
+    />
+    <meta
+      property="twitter:description"
+      content="EMI vous accompagne pour vos soins médicaux en Tunisie depuis la RDC. Devis gratuit, accompagnement sécurisé, cliniques de qualité."
+    />
+    <meta
+      property="twitter:image"
+      content="https://espoirmedicalinternational.com/assets/images/hero.png"
+    />
+
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://espoirmedicalinternational.com/" />
+    <meta name="theme-color" content="#1e40af" />
+
     <link rel="stylesheet" href="assets/css/output.css" />
-    <!-- <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "emi-blue": "#1E40AF",
-              "emi-cyan": "#0891B2",
-              "emi-light-blue": "#60A5FA",
-            },
-          },
-        },
-      };
-    </script> -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <!-- <style>
-      .gradient-bg {
-        background: linear-gradient(135deg, #1e40af 0%, #0891b2 100%);
-      }
-      .hero-pattern {
-        background-image: radial-gradient(
-            circle at 20% 50%,
-            rgba(120, 119, 198, 0.1) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 80% 20%,
-            rgba(120, 119, 198, 0.1) 0%,
-            transparent 50%
-          );
-      }
-      .card-hover {
-        transition: all 0.3s ease;
-      }
-      .card-hover:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      }
-      .pulse-animation {
-        animation: pulse 2s infinite;
-      }
-      @keyframes pulse {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.7;
-        }
-      }
-
-      .floating {
-        animation: floating 3s ease-in-out infinite;
-      }
-
-      .floating-delayed {
-        animation: floating 4s ease-in-out infinite 1s;
-      }
-
-      .floating-slow {
-        animation: floating 5s ease-in-out infinite 2s;
-      }
-
-      @keyframes floating {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-15px);
-        }
-      }
-
-      /* Hero loading animations */
-      .hero-fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .hero-fade-in.animate {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .hero-slide-left {
-        opacity: 0;
-        transform: translateX(-50px);
-        transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .hero-slide-left.animate {
-        opacity: 1;
-        transform: translateX(0);
-      }
-
-      .hero-slide-right {
-        opacity: 0;
-        transform: translateX(50px);
-        transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .hero-slide-right.animate {
-        opacity: 1;
-        transform: translateX(0);
-      }
-
-      .hero-scale-in {
-        opacity: 0;
-        transform: scale(0.9);
-        transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .hero-scale-in.animate {
-        opacity: 1;
-        transform: scale(1);
-      }
-
-      /* Stats cards animation */
-      .stats-card {
-        opacity: 0;
-        transform: translateY(20px) scale(0.95);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .stats-card.animate {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-
-      /* Problem/Solution section animations */
-      .section-fade-in {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .section-fade-in.animate {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .feature-slide-up {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .feature-slide-up.animate {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* New animations for scroll */
-      .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.6s ease;
-      }
-
-      .animate-on-scroll.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style> -->
   </head>
   <body class="font-sans">
     <!-- Header -->
@@ -858,147 +761,6 @@
       </div>
     </footer>
 
-    <script>
-      // Hero section loading animation
-      function initPageAnimations() {
-        // Hero elements
-        const heroElements = document.querySelectorAll(
-          ".hero-fade-in, .hero-slide-left, .hero-slide-right, .hero-scale-in, .stats-card"
-        );
-
-        // Problem/Solution section elements
-        const sectionElements = document.querySelectorAll(
-          ".section-fade-in, .feature-slide-up"
-        );
-
-        // Combined animation sequence
-        const allElements = [...heroElements, ...sectionElements];
-
-        // Staggered animation delays - hero first, then section
-        const delays = [
-          0, // Hero title
-          200, // Hero description
-          400, // Hero buttons
-          600, // Hero features
-          800, // Hero image
-          1000, // Stats card 1
-          1200, // Stats card 2
-          1400, // Section title
-          1600, // Feature 1
-          1750, // Feature 2
-          1900, // Feature 3
-        ];
-
-        allElements.forEach((element, index) => {
-          setTimeout(() => {
-            element.classList.add("animate");
-          }, delays[index] || 0);
-        });
-      }
-
-      // Initialize animations on page load
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          initPageAnimations();
-        }, 300); // Small delay to ensure page is fully loaded
-      });
-
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-
-      // Header scroll effect
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 100) {
-          header.classList.add("bg-white/95", "backdrop-blur-sm");
-        } else {
-          header.classList.remove("bg-white/95", "backdrop-blur-sm");
-        }
-      });
-
-      // Mobile menu toggle
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener("click", function () {
-          mobileMenu.classList.toggle("hidden");
-
-          // Toggle hamburger icon
-          const icon = mobileMenuButton.querySelector("i");
-          if (mobileMenu.classList.contains("hidden")) {
-            icon.className = "fas fa-bars text-xl";
-          } else {
-            icon.className = "fas fa-times text-xl";
-          }
-        });
-
-        // Close mobile menu when clicking on links
-        mobileMenu.querySelectorAll("a").forEach((link) => {
-          link.addEventListener("click", () => {
-            mobileMenu.classList.add("hidden");
-            const icon = mobileMenuButton.querySelector("i");
-            icon.className = "fas fa-bars text-xl";
-          });
-        });
-      }
-
-      // Form submission
-      document.querySelector("form").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Merci pour votre demande ! Nous vous contacterons bientôt.");
-      });
-
-      // WhatsApp button functionality
-      document.querySelectorAll("button").forEach((button) => {
-        if (button.classList.contains("whatsapp-button")) {
-          button.addEventListener("click", function () {
-            window.open(
-              "https://wa.me/21658016595?text=Bonjour, je souhaite obtenir des informations sur vos services médicaux en Tunisie.",
-              "_blank"
-            );
-          });
-        }
-      });
-
-      // Scroll animations
-      function animateOnScroll() {
-        const elements = document.querySelectorAll(
-          ".card-hover, .animate-on-scroll"
-        );
-        elements.forEach((element) => {
-          const elementTop = element.getBoundingClientRect().top;
-          const elementVisible = 150;
-
-          if (elementTop < window.innerHeight - elementVisible) {
-            element.style.opacity = "1";
-            element.style.transform = "translateY(0)";
-          }
-        });
-      }
-
-      // Initialize scroll animations
-      document
-        .querySelectorAll(".card-hover, .animate-on-scroll")
-        .forEach((element) => {
-          element.style.opacity = "0";
-          element.style.transform = "translateY(20px)";
-          element.style.transition = "all 0.6s ease";
-        });
-
-      window.addEventListener("scroll", animateOnScroll);
-      animateOnScroll(); // Run once on load
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
