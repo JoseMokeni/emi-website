@@ -158,3 +158,10 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Enhanced scroll animations for sections */
+.section-fade-in.visible,
+.feature-slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

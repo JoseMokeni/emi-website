@@ -99,26 +99,17 @@ document.querySelector("form").addEventListener("submit", function (e) {
   alert("Merci pour votre demande ! Nous vous contacterons bientôt.");
 });
 
-// WhatsApp button functionality
-document.querySelectorAll("button").forEach((button) => {
-  if (button.classList.contains("whatsapp-button")) {
-    button.addEventListener("click", function () {
-      window.open(
-        "https://wa.me/21658016595?text=Bonjour, je souhaite obtenir des informations sur vos services médicaux en Tunisie.",
-        "_blank"
-      );
-    });
-  }
-});
-
 // Scroll animations
 function animateOnScroll() {
-  const elements = document.querySelectorAll(".card-hover, .animate-on-scroll");
+  const elements = document.querySelectorAll(
+    ".card-hover, .animate-on-scroll, .feature-slide-up, .section-fade-in"
+  );
   elements.forEach((element) => {
     const elementTop = element.getBoundingClientRect().top;
     const elementVisible = 150;
 
     if (elementTop < window.innerHeight - elementVisible) {
+      element.classList.add("visible");
       element.style.opacity = "1";
       element.style.transform = "translateY(0)";
     }
@@ -127,7 +118,9 @@ function animateOnScroll() {
 
 // Initialize scroll animations
 document
-  .querySelectorAll(".card-hover, .animate-on-scroll")
+  .querySelectorAll(
+    ".card-hover, .animate-on-scroll, .feature-slide-up, .section-fade-in"
+  )
   .forEach((element) => {
     element.style.opacity = "0";
     element.style.transform = "translateY(20px)";
