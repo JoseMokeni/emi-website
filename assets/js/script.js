@@ -37,6 +37,7 @@ function initPageAnimations() {
 
 // Initialize animations on page load
 window.addEventListener("load", () => {
+  document.querySelector("form").reset(); // Reset form on load
   setTimeout(() => {
     initPageAnimations();
   }, 300); // Small delay to ensure page is fully loaded
@@ -55,6 +56,17 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// Scroll to top on click to navbar logo
+const navbarLogo = document.getElementById("navbar-logo");
+if (navbarLogo) {
+  navbarLogo.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
 
 // Header scroll effect
 window.addEventListener("scroll", function () {
@@ -95,7 +107,6 @@ if (mobileMenuButton && mobileMenu) {
 
 // Form submission
 document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
   alert("Merci pour votre demande ! Nous vous contacterons bientôt.");
 });
 

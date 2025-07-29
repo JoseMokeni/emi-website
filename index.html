@@ -79,15 +79,12 @@
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center space-x-3">
-            <div
-              class="w-12 h-12 bg-gradient-to-r from-emi-blue to-emi-cyan rounded-lg flex items-center justify-center"
-            >
-              <i class="fas fa-stethoscope text-white text-xl"></i>
-            </div>
-            <div>
-              <h1 class="text-xl font-bold text-emi-blue">E.M.I</h1>
-              <p class="text-xs text-gray-600">Espoir Médical International</p>
-            </div>
+            <img
+              src="./assets/images/logo.png"
+              alt="Espoir Médical International Logo"
+              class="h-20 w-auto hover:cursor-pointer"
+              id="navbar-logo"
+            />
           </div>
 
           <nav class="hidden md:flex items-center space-x-8">
@@ -802,47 +799,69 @@
             <h4 class="text-2xl font-bold text-gray-800 mb-6">
               Contactez-nous
             </h4>
-            <form class="space-y-4">
+            <form
+              class="space-y-4"
+              action="https://formspree.io/f/xyzpjqez"
+              method="POST"
+            >
               <div class="grid md:grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="Prénom"
+                  name="Prenom"
+                  required
                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Nom"
+                  name="Nom"
+                  required
                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
                 />
               </div>
               <input
                 type="email"
                 placeholder="Email"
+                name="Email"
+                required
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
               />
               <input
                 type="tel"
                 placeholder="Téléphone"
+                name="Telephone"
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
               />
               <select
+                name="Type de soins recherchés"
+                required
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
               >
-                <option>Type de soins recherchés</option>
-                <option>Chirurgie générale</option>
-                <option>Soins dentaires</option>
-                <option>Examens médicaux</option>
-                <option>Chirurgie esthétique</option>
-                <option>Autre</option>
+                <option value="">Type de soins recherchés</option>
+                <option value="chirurgie_generale">Chirurgie générale</option>
+                <option value="soins_dentaires">Soins dentaires</option>
+                <option value="examens_medicaux">Examens médicaux</option>
+                <option value="chirurgie_esthetique">
+                  Chirurgie esthétique
+                </option>
+                <option value="autre">Autre</option>
               </select>
               <textarea
                 placeholder="Décrivez votre situation..."
+                name="Message"
                 rows="4"
+                required
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emi-blue focus:outline-none"
               ></textarea>
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nouvelle demande de contact - EMI"
+              />
               <button
                 type="submit"
-                class="w-full bg-gradient-to-r from-emi-blue to-emi-cyan text-white py-4 rounded-lg font-semibold hover:shadow-lg transition-all"
+                class="w-full hover:cursor-pointer bg-gradient-to-r from-emi-blue to-emi-cyan text-white py-4 rounded-lg font-semibold hover:shadow-lg transition-all"
               >
                 Envoyer mon message
               </button>
@@ -890,26 +909,20 @@
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-8">
-          <div class="animate-on-scroll">
-            <div class="flex items-center space-x-3 mb-4">
-              <div
-                class="w-10 h-10 bg-gradient-to-r from-emi-blue to-emi-cyan rounded-lg flex items-center justify-center"
-              >
-                <i class="fas fa-stethoscope text-white"></i>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold">E.M.I</h3>
-                <p class="text-sm text-gray-400">
-                  Espoir Médical International
-                </p>
-              </div>
+          <div class="animate-on-scroll text-center">
+            <div class="flex items-center justify-center mb-4">
+              <img
+                src="./assets/images/logo.png"
+                alt="Espoir Médical International Logo"
+                class="h-64"
+              />
             </div>
             <p class="text-gray-400">
               Votre partenaire de confiance pour vos soins médicaux en Tunisie.
             </p>
           </div>
 
-          <div class="animate-on-scroll">
+          <div class="animate-on-scroll text-center">
             <h4 class="text-lg font-semibold mb-4">Services</h4>
             <ul class="space-y-2 text-gray-400">
               <li>Analyse médicale</li>
@@ -919,7 +932,7 @@
             </ul>
           </div>
 
-          <div class="animate-on-scroll">
+          <div class="animate-on-scroll text-center">
             <h4 class="text-lg font-semibold mb-4">Contact</h4>
             <div class="space-y-2 text-gray-400">
               <p><i class="fas fa-phone mr-2"></i> +216 58 016 595</p>
@@ -931,9 +944,9 @@
             </div>
           </div>
 
-          <div class="animate-on-scroll">
+          <div class="animate-on-scroll text-center">
             <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
-            <div class="flex space-x-4">
+            <div class="flex space-x-4 justify-center">
               <a
                 href="https://www.facebook.com/profile.php?id=61577952046470&locale=fr_FR"
                 class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
